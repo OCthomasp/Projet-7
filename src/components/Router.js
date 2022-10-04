@@ -1,14 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout"
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Logement from "./pages/Logement";
-import NoPage from "./pages/NoPage";
+import Layout from "../pages/Layout"
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Logement from "../pages/Logement";
+import NoPage from "../pages/NoPage";
 
-import Banner from './components/Banner'
-import './styles/App.css';
-
-export default function App() {
+export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
