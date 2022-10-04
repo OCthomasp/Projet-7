@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "../pages/Layout"
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Logement from "../pages/Logement";
-import NoPage from "../pages/NoPage";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from '../pages/Home'
+import About from '../pages/About'
+import Logement from '../pages/Logement'
+import NoPage from '../pages/NoPage'
+import Header from '../components/Header'
 
 export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route exact path="/" element={<Header />}>
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="logement" element={<Logement />} />
@@ -17,5 +17,5 @@ export default function Router() {
                 </Route>
             </Routes>
         </BrowserRouter>
-    );
+    )
 }

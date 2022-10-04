@@ -19,7 +19,7 @@ body {
 }
 
 a{
-    color: black;
+    color: #FF6060;
     text-decoration: none;
 }
 /* End GLOBAL */
@@ -37,14 +37,13 @@ header nav{
     display: flex;
 }
 
-header nav a{
+header nav link{
     padding: 1rem;
     text-align: center;
-    color: #FF6060;
     font-weight: 500;
 }
 
-header nav a:hover{
+header nav link:hover{
     text-decoration-line: underline;
 }
 
@@ -67,11 +66,13 @@ header nav a:hover{
 }
 
 .thumb{
-    background-color: pink;
-    border-radius: 1px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 5%, rgba(0,212,255,0) 100%), #FF6060; 
+    border-radius: 1rem;
     margin: 5px 5px 20px 5px;
     cursor: pointer;
-    width: 340px;
+    width: 240px;
+    min-height: 240px;
 }
 
 .thumb:hover{
@@ -92,4 +93,29 @@ header nav a:hover{
 
 .thumb-text{
     padding: 0;
+    color: #FFF;
+}
+
+.std-link{
+    text-decoration-line: underline;
+}
+
+#error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-title{
+    font-weight: 700;
+    font-size: 20rem;
+    color: #FF6060;
+    margin : 3rem;
+}
+
+.error-subtitle{
+    font-weight: 500;
+    font-size: 3rem;
+    color: #FF6060;
 }
