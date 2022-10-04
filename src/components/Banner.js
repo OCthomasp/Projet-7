@@ -1,5 +1,11 @@
+
+
 function Banner() {
-    return <h1>Header h1</h1>
+    return (
+        <div class='bg-banniere'>
+            <p>Chez vous, partout et ailleurs</p>
+        </div>
+    );
 }
 
 export default Banner
