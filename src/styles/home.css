@@ -15,7 +15,8 @@ html {font-size : 62.5%}
 
 body {
     font-family: 'Montserrat', sans-serif; 
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
+    margin : auto 5rem auto 5rem;
 }
 
 a{
@@ -27,6 +28,7 @@ a{
 header{
     display: flex;
     justify-content: space-between;
+    margin : 2rem 0 2rem 0;
 }
 
 header a img{
@@ -37,19 +39,31 @@ header nav{
     display: flex;
 }
 
-header nav link{
+header nav a{
     padding: 1rem;
     text-align: center;
     font-weight: 500;
 }
 
-header nav link:hover{
+header nav a:hover{
     text-decoration-line: underline;
+}
+
+.bg-about{
+    /* filter: brightness(50%); */
+    width: 100%;
+    min-height: 20rem;
+    border-radius: 2rem;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/bg-about.png');
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .bg-banniere{
     /* filter: brightness(50%); */
     width: 100%;
+    min-height: 20rem;
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -98,6 +112,7 @@ header nav link:hover{
 
 .std-link{
     text-decoration-line: underline;
+    text-align: center;
 }
 
 #error{
@@ -118,4 +133,79 @@ header nav link:hover{
     font-weight: 500;
     font-size: 3rem;
     color: #FF6060;
+    text-align: center;
+}
+
+.dd-container{
+    /* background-color: #FF6060; */
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.dd-preview{
+    background-color: #FF6060;
+    border-radius: 1rem;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dd-preview h1{
+    color: #fff;
+    margin: 1rem 1rem;
+}
+
+.dd-preview img{
+    margin: 0 2rem;
+}
+
+.dd-hidden{
+    background-color: #F7F7F7;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+    display: none;
+    margin: 0;
+}
+
+.dd-text{
+    color: #FF6060;
+    padding : 1rem;
+    margin: 0;
+}
+
+.dd-container:hover>.dd-hidden{
+    display: block;
+}
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #000;
+    color : #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    margin: 1rem auto 1rem auto;
+    filter: brightness(9999%);
+    width: 15rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 992px) {
+    .error-title{
+        font-size: 15rem;
+    }
 }

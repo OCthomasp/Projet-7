@@ -1,8 +1,6 @@
-import Header from '../components/Header'
-
 const NoPage = () => {
     return (
-        <body>
+        <div>
             <section id="error">
                 <h1 class="error-title">404</h1>
                 <h2 class="error-subtitle">
@@ -12,7 +10,7 @@ const NoPage = () => {
                     Retourner sur la page d'accueil
                 </a>
             </section>
-        </body>
+        </div>
     )
 }
 

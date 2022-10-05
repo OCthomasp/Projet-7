@@ -1,5 +1,15 @@
-const About = () => {
-    return <h1>About</h1>;
-};
+import AboutBanner from '../components/AboutBanner'
+import Dropdown from '../components/Dropdown'
+import Footer from '../components/Footer'
 
-export default About;
+const About = () => {
+    return (
+        <div>
+            <AboutBanner />
+            <Dropdown />
+            <Footer />
+        </div>
+    )
+}
+
+export default About
