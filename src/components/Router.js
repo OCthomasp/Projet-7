@@ -4,6 +4,7 @@ import About from '../pages/About'
 import Logement from '../pages/Logement'
 import NoPage from '../pages/NoPage'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Router() {
     return (
@@ -16,6 +17,7 @@ export default function Router() {
                     <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
+            <Footer />
         </BrowserRouter>
     )
 }

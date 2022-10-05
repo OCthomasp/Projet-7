@@ -7,16 +7,22 @@ const data = require('../data/logements.json')
 
 const Home = () => {
     return (
-        <section>
-            <Banner />
-            {data.map((housing) => (
-                <Card
-                    key={housing.id}
-                    title={housing.title}
-                    picture={housing.cover}
-                />
-            ))}
-        </section>
+        <main>
+            <Banner
+                key="000banner"
+                page="home"
+                text="Chez vous, partout et ailleurs"
+            />
+            <section id="housing">
+                {data.map((housing) => (
+                    <Card
+                        key={housing.id}
+                        title={housing.title}
+                        picture={housing.cover}
+                    />
+                ))}
+            </section>
+        </main>
     )
 }
 

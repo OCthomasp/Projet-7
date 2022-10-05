@@ -1,6 +1,6 @@
 const NoPage = () => {
     return (
-        <div>
+        <main>
             <section id="error">
                 <h1 className="error-title">404</h1>
                 <h2 className="error-subtitle">
@@ -10,7 +10,7 @@ const NoPage = () => {
                     Retourner sur la page d'accueil
                 </a>
             </section>
-        </div>
+        </main>
     )
 }
 

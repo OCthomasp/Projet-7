@@ -1,9 +1,7 @@
-function Banner() {
-    return (
-        <div className="bg-banniere">
-            <p>Chez vous, partout et ailleurs</p>
-        </div>
-    )
+const Banner = ({ page, text }) => {
+    const classContent = `bg bg-${page}`
+
+    return <div className={classContent}>{text}</div>
 }
 
 export default Banner
