@@ -8,7 +8,9 @@ const NoPage = () => {
                 <h2 class="error-subtitle">
                     Oups! La page que vous demandez n'existe pas.
                 </h2>
-                <a class="std-link">Retourner sur la page d'accueil</a>
+                <a href="/" class="std-link">
+                    Retourner sur la page d'accueil
+                </a>
             </section>
         </body>
     )
