@@ -12,7 +12,7 @@ export default function Router() {
                 <Route exact path="/" element={<Header />}>
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
-                    <Route path="logement" element={<Logement />} />
+                    <Route path="logement/:id" element={<Logement />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>

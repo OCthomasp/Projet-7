@@ -1,13 +1,21 @@
 import Banner from '../components/Banner'
-import Thumb from '../components/Thumb'
+import Card from '../components/Card'
 import '../styles/home.css'
+const data = require('../data/logements.json')
+
+// const data = JSON.parse(dataJSON)
 
 const Home = () => {
     return (
-        // <h1>Home</h1>
         <section>
             <Banner />
-            <Thumb />
+            {data.map((housing) => (
+                <Card
+                    key={housing.id}
+                    title={housing.title}
+                    picture={housing.cover}
+                />
+            ))}
         </section>
     )
 }

@@ -79,7 +79,7 @@ header nav a:hover{
     font-size: 4rem;
 }
 
-.thumb{
+.card{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.6) 5%, rgba(0,212,255,0) 100%), #FF6060; 
     border-radius: 1rem;
@@ -89,23 +89,23 @@ header nav a:hover{
     min-height: 240px;
 }
 
-.thumb:hover{
+.card:hover{
     transform: scale(1.01);
 }
 
-.thumb a{
+.card a{
     padding: 0;
     position: relative;
 }
 
-.thumb-img{
+.card-img{
     object-fit: cover;
     height: 150px;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
 
-.thumb-text{
+.card-text{
     padding: 0;
     color: #FFF;
 }
@@ -153,7 +153,7 @@ header nav a:hover{
     justify-content: space-between;
 }
 
-.dd-preview h1{
+.dd-preview h2{
     color: #fff;
     margin: 1rem 1rem;
 }

@@ -1,5 +1,5 @@
 function AboutBanner() {
-    return <div class="bg-about"></div>
+    return <div className="bg-about"></div>
 }
 
 export default AboutBanner
