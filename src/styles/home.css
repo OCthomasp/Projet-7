@@ -43,11 +43,11 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    margin : 2rem 0 2rem 0;
+    margin : 2rem 5rem;
 }
 
 header a img{
-    width: 60%;
+    width: 80%;
 }
 
 header nav{
@@ -220,6 +220,7 @@ header nav a:hover{
     color: var(--main-color);
     padding : 1rem;
     margin: 0;
+    white-space: pre-line;
 }
 
 .dd-container:hover>.dd-hidden{
@@ -227,6 +228,77 @@ header nav a:hover{
 }
 /* -----END ABOUT----- */
 
+/* -----CAROUSEL----- */
+
+.carousel{
+    position: relative;
+    height: 50rem;
+}
+
+.image-slide{
+    border-radius: 2.5rem;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+[class*=slide-arrow]{
+    position: absolute;
+    top: 22.5rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+}
+
+[class*=slide-arrow] img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-arrow-left{
+    left: 0;
+    transform: rotate(90deg);
+}
+
+.slide-arrow-right{
+    right: 0;
+    transform: rotate(-90deg);
+}
+
+/* -----END CAROUSEL----- */
+
+/* -----HOUSING INFO----- */
+
+#housing-info{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#housing-info h2{
+    grid-row: 2;
+}
+
+#housing-info .tags{
+    grid-row: 3;
+}
+
+#housing-info .host-info{
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    background-color: #FF6060;
+}
+
+#housing-info .rating{
+    grid-column: 2;
+    grid-row: 3;
+
+    background-color: #a7ff60;
+}
+
+
+/* -----END HOUSING INFO----- */
 
 /* -----FOOTER----- */
 footer{

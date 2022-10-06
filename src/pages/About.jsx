@@ -2,11 +2,10 @@ import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 
 const About = () => {
-    const exText = `La bienveillance fait partie des valeurs fondatrices de
-    Kasa. Tout comportement discriminatoire ou de perturbation
-    du voisinage entraînera une exclusion de notre plateforme.`
+    const exText = `La bienveillance fait partie des valeurs fondatrices de Kasa.
+    Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.`
 
-    const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`

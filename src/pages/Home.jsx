@@ -3,8 +3,6 @@ import Card from '../components/Card'
 import '../styles/home.css'
 const data = require('../data/logements.json')
 
-// const data = JSON.parse(dataJSON)
-
 const Home = () => {
     return (
         <main>

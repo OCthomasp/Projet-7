@@ -1,4 +1,4 @@
-import arrow from '../assets/collapse.svg'
+import arrow from '../assets/arrow.svg'
 import { useState } from 'react'
 
 const Collapse = ({ title, text }) => {
