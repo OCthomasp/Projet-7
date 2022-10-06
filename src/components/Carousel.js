@@ -1,7 +1,6 @@
 import Arrow from '../components/Arrow'
 import ImageSlide from '../components/ImageSlide'
 import { useState } from 'react'
-import { useEffect } from 'react'
 
 const Carousel = ({ urlList }) => {
     const [urlIndex, setIndex] = useState(0)

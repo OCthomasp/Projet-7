@@ -25,7 +25,7 @@ const About = () => {
                     <Collapse
                         key={`collapse_menu_${index}`}
                         title={menu.title}
-                        text={menu.content}
+                        content={menu.content}
                     />
                 ))}
             </section>

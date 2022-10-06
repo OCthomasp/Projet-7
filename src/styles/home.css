@@ -32,7 +32,7 @@ main{
     margin : 0 5rem auto 5rem;
 }
 
-a{
+a, p, h1, h2{
     color: var(--main-color);
     text-decoration: none;
 }
@@ -161,6 +161,7 @@ header nav a:hover{
     text-align: center;
 }
 
+
 #error{
     display: flex;
     align-items: center;
@@ -185,8 +186,8 @@ header nav a:hover{
 /* -----ABOUT----- */
 .dd-container{
     border-radius: 1rem;
-    margin: 2rem auto;
-    width: 80%;
+    margin: 2rem 0;
+    width: 100%;
 }
 
 .dd-preview{
@@ -267,38 +268,126 @@ header nav a:hover{
 
 /* -----END CAROUSEL----- */
 
-/* -----HOUSING INFO----- */
+/* -----HOUSING INFO GRID LAYOUT----- */
 
-#housing-info{
+#housing-info-top{
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3, 1fr);
+
+    margin: 2rem 0;
 }
 
-#housing-info h2{
+#housing-info-top h1{
+    grid-row: 1;
+    margin: 0;
+}
+
+#housing-info-top h2{
     grid-row: 2;
+    margin: 0;
 }
 
-#housing-info .tags{
+#housing-info-top .tags{
     grid-row: 3;
+    margin: 0;
 }
 
-#housing-info .host-info{
+#housing-info-top .host-info{
     grid-column: 2;
     grid-row: 1 / 3;
-
-    background-color: #FF6060;
 }
 
-#housing-info .rating{
+#housing-info-top .rating{
     grid-column: 2;
     grid-row: 3;
+}
 
-    background-color: #a7ff60;
+#housing-info-bottom{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* -----END HOUSING INFO GRID LAYOUT----- */
+
+/* -----HOUSING INFO----- */
+
+#housing-info-top h1{
+    font-weight: 500;
+    font-size: 3.6rem;
+}
+
+#housing-info-top h2{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+#housing-info-bottom .equipment{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10%;
+}
+
+#housing-info-bottom .description{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10%;
 }
 
 
 /* -----END HOUSING INFO----- */
+
+/* -----HOST----- */
+
+.host{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.host p{
+    color: var(--main-color);
+    width: min-content;
+    text-align: right;
+    margin : 0 1rem;
+}
+
+.host img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+/* -----END HOST----- */
+
+/* -----TAG----- */
+
+.tags{
+    display: flex;
+    align-items: center;
+}
+
+.tag-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--main-color);
+    border-radius: 10px;
+    width: fit-content;
+    min-width: 8rem;
+    padding: 0 1.5rem;
+    margin-right: 2rem; 
+}
+
+.tag-text p{
+    margin : 0;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* -----END TAG----- */
 
 /* -----FOOTER----- */
 footer{
@@ -320,6 +409,7 @@ footer img{
 
 footer p{
     text-align: center;
+    color: #fff;
 }
 /* -----END FOOTER----- */
 

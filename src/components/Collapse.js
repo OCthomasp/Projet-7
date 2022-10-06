@@ -1,8 +1,19 @@
 import arrow from '../assets/arrow.svg'
 import { useState } from 'react'
 
-const Collapse = ({ title, text }) => {
+const Collapse = ({ title, content }) => {
     const [collapsed, updateCollapse] = useState(true)
+
+    const context =
+        typeof content === typeof '' ? (
+            <p className="dd-text">{content}</p>
+        ) : (
+            <ul>
+                {content.map((element) => (
+                    <li>{element}</li>
+                ))}
+            </ul>
+        )
 
     return (
         <div className="dd-container">
@@ -14,7 +25,8 @@ const Collapse = ({ title, text }) => {
                 <img src={arrow} alt="icone dropdown" />
             </div>
             <div className="dd-hidden">
-                <p className="dd-text">{text}</p>
+                {/* <p className="dd-text">{content}</p> */}
+                {context}
             </div>
         </div>
     )
