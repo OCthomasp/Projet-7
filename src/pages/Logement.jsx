@@ -2,6 +2,7 @@ import Carousel from '../components/Carousel'
 import Collapse from '../components/Collapse'
 import Host from '../components/Host'
 import Tag from '../components/Tag'
+import Rating from '../components/Rating'
 
 const data = require('../data/logements.json')
 
@@ -31,7 +32,9 @@ const Logement = () => {
                             picture={housing.host.picture}
                         />
                     </div>
-                    <div className="rating">rating</div>
+                    <div className="rating">
+                        <Rating key={`rating001}`} score={housing.rating} />
+                    </div>
                 </div>
                 <div id="housing-info-bottom">
                     <div className="description">

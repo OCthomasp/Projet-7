@@ -4,9 +4,10 @@ import { useState } from 'react'
 const Collapse = ({ title, content }) => {
     const [collapsed, updateCollapse] = useState(true)
 
+    // Determine if we need to display text or a list
     const context =
         typeof content === typeof '' ? (
-            <p className="dd-text">{content}</p>
+            <p className="collapse-text">{content}</p>
         ) : (
             <ul>
                 {content.map((element) => (
@@ -16,16 +17,19 @@ const Collapse = ({ title, content }) => {
         )
 
     return (
-        <div className="dd-container">
+        <div className="collapse-container">
             <div
-                className="dd-preview"
+                className="collapse-preview"
                 onClick={() => updateCollapse(!collapsed)}
             >
                 <h2>{title}</h2>
-                <img src={arrow} alt="icone dropdown" />
+                <img
+                    src={arrow}
+                    alt="flèche"
+                    className={collapsed ? 'down-arrow' : 'up-arrow'}
+                />
             </div>
-            <div className="dd-hidden">
-                {/* <p className="dd-text">{content}</p> */}
+            <div className={collapsed ? 'collapse-hidden' : 'collapse-reveal'}>
                 {context}
             </div>
         </div>
