@@ -19,7 +19,7 @@ const About = () => {
 
     return (
         <main>
-            <Banner key="001banner" page="about" text="" />
+            <Banner key="about_banner_0" page="about" text="" />
             <section id="collapse_texts">
                 {textContent.map((menu, index) => (
                     <Collapse

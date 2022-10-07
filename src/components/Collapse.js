@@ -10,8 +10,8 @@ const Collapse = ({ title, content }) => {
             <p className="collapse-text">{content}</p>
         ) : (
             <ul>
-                {content.map((element) => (
-                    <li>{element}</li>
+                {content.map((element, index) => (
+                    <li key={`equipment_${index}`}>{element}</li>
                 ))}
             </ul>
         )

@@ -1,16 +1,17 @@
-import star from '../assets/star.svg'
+import Star from '../components/Star'
 
 const Rating = ({ score }) => {
     let score_array = Array(5).fill(false).fill(true, 0, score)
 
-    const fullStar = <img src={star} alt="étoile remplie" />
-    const emptyStar = (
-        <img src={star} alt="étoile vide" className="empty-star" />
-    )
-
     return (
         <div className="rating-container">
-            {score_array.map((isFull) => (isFull ? fullStar : emptyStar))}
+            {score_array.map((isFull, index) =>
+                isFull ? (
+                    <Star key={`star_${index}`} isFull={true} />
+                ) : (
+                    <Star key={`star_${index}`} isFull={false} />
+                )
+            )}
         </div>
     )
 }

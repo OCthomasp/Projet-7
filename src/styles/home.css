@@ -193,6 +193,8 @@ header nav a:hover{
     border-radius: 1rem;
     margin: 2rem 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .collapse-preview{
@@ -248,8 +250,11 @@ header nav a:hover{
 .collapse-reveal{
     background-color: var(--back-color);
     border-radius: 0 0 1rem 1rem;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     margin: 0;
+    margin-top: -10px;
+    z-index: -1;
+    position: relative;
 }
 
 .up-arrow{

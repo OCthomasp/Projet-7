@@ -7,14 +7,15 @@ const Home = () => {
     return (
         <main>
             <Banner
-                key="000banner"
+                key="home_banner"
                 page="home"
                 text="Chez vous, partout et ailleurs"
             />
             <section id="housing">
-                {data.map((housing) => (
+                {data.map((housing, index) => (
                     <Card
-                        key={housing.id}
+                        key={`card_${housing.id}_${index}`}
+                        id={housing.id}
                         title={housing.title}
                         picture={housing.cover}
                     />
