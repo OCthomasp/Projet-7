@@ -6,7 +6,7 @@ const Card = ({ id, title, picture }) => {
     return (
         <article className="card" onClick={() => navigate(url)}>
             <img className="card-img" src={picture} alt="Logement" />
-            <div className="card-text">{title}</div>
+            <h2 className="card-text">{title}</h2>
         </article>
     )
 }

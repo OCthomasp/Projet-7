@@ -19,17 +19,25 @@ const Carousel = ({ urlList }) => {
 
     return (
         <div className="carousel">
-            <Arrow
-                key="left_arrow"
-                direction="left"
-                clickFunction={previousSlide}
-            />
+            {urlList.length > 1 ? (
+                <Arrow
+                    key="left_arrow"
+                    direction="left"
+                    clickFunction={previousSlide}
+                />
+            ) : (
+                <></>
+            )}
             <ImageSlide url={urlList[urlIndex]} />
-            <Arrow
-                key="right_arrow"
-                direction="right"
-                clickFunction={nextSlide}
-            />
+            {urlList.length > 1 ? (
+                <Arrow
+                    key="right_arrow"
+                    direction="right"
+                    clickFunction={nextSlide}
+                />
+            ) : (
+                <></>
+            )}
         </div>
     )
 }
