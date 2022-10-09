@@ -17,7 +17,7 @@ const Collapse = ({ title, content }) => {
         )
 
     return (
-        <div className="collapse-container">
+        <div className="collapse-container" tabIndex="0">
             <div
                 className="collapse-preview"
                 onClick={() => updateCollapse(!collapsed)}

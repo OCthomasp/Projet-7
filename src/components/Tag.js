@@ -2,7 +2,7 @@ const Tag = ({ name }) => {
     return (
         <div className="tag-container">
             <div className="tag-text">
-                <p>{name}</p>
+                <h3>{name}</h3>
             </div>
         </div>
     )

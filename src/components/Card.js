@@ -4,7 +4,7 @@ const Card = ({ id, title, picture }) => {
     const navigate = useNavigate()
     const url = `/logement/${id}`
     return (
-        <article className="card" onClick={() => navigate(url)}>
+        <article className="card" onClick={() => navigate(url)} tabIndex="0">
             <img className="card-img" src={picture} alt="Logement" />
             <h2 className="card-text">{title}</h2>
         </article>

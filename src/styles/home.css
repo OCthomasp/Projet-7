@@ -38,6 +38,15 @@ a, p, h1, h2{
 }
 /* End GLOBAL */
 
+.visually-hidden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* -----HEADER----- */
 
 header{
@@ -265,11 +274,59 @@ header nav a:hover{
 }
 /* -----END ABOUT----- */
 
+details{
+    border-radius: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+details summary{
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    width: 100%;
+    cursor: pointer;
+    list-style-image: url('../assets/arrow.svg');
+}
+
+details summary h2{
+    margin: 0;
+    color: #fff;
+    padding: 1rem 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+details p{
+    color: var(--main-color);
+    padding : 1rem;
+    margin: 0;
+    white-space: pre-line;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 2.7rem;
+    font-size: 2rem;
+
+    background-color: var(--back-color);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+details ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem 1rem;
+    color: var(--main-color);
+    line-height: 2.7rem;
+    font-size: 2rem;
+}
+
 /* -----CAROUSEL----- */
 
 .carousel{
     position: relative;
-    height: 41.5rem;
+    height: 50rem;
 }
 
 .image-slide{
@@ -437,7 +494,7 @@ header nav a:hover{
     margin: 0.5rem 2rem 0.5rem 0;
 }
 
-.tag-text p{
+.tag-text h3{
     margin : 0;
     color: #fff;
     font-size: 2rem;
@@ -536,7 +593,7 @@ footer p{
     /* -----CAROUSEL----- */
 
     .carousel{
-        height: 25.5rem;
+        height: 35rem;
     }
 
     [class*=slide-arrow]{

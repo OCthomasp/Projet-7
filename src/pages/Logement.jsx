@@ -29,6 +29,9 @@ const Logement = () => {
                         ))}
                     </div>
                     <div className="host-info">
+                        <h2 className="visually-hidden">
+                            Annonce de {housing.host.name}
+                        </h2>
                         <Host
                             key={`host_${id}`}
                             name={housing.host.name}
@@ -36,6 +39,9 @@ const Logement = () => {
                         />
                     </div>
                     <div className="rating">
+                        <h2 className="visually-hidden">
+                            Avis : {housing.rating}/5
+                        </h2>
                         <Rating key={'rating'} score={housing.rating} />
                     </div>
                 </div>

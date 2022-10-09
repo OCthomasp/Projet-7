@@ -12,6 +12,7 @@ const Home = () => {
                 text="Chez vous, partout et ailleurs"
             />
             <section id="housing">
+                <h1 className="visually-hidden">Appartements en location</h1>
                 {data.map((housing, index) => (
                     <Card
                         key={`card_${housing.id}_${index}`}
